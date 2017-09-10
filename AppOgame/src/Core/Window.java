@@ -95,6 +95,8 @@ public class Window {
 	private JTextField textField_24;
 	private JTextField textField_25;
 	private JTextField textField_26;
+	private JTextField textField_27;
+	private JTextField textField_28;
 
 	/**
 	 * Launch the application.
@@ -577,7 +579,7 @@ public class Window {
 
 		lblNewLabel_2 = new JLabel("ROBADO");
 
-		lblReciclado = new JLabel("RECICLADO");
+		lblReciclado = new JLabel("RECICLADO 1");
 
 		textField_13 = new JTextField();
 		textField_13.setText("0");
@@ -606,65 +608,80 @@ public class Window {
 		lblNewLabel = new JLabel("DEUTERIO");
 
 		lblGanancias = new JLabel("GANANCIAS");
+		
+		textField_27 = new JTextField();
+		textField_27.setText("0");
+		textField_27.setColumns(10);
+		
+		textField_28 = new JTextField();
+		textField_28.setText("0");
+		textField_28.setColumns(10);
+		
+		JLabel lblReciclado_1 = new JLabel("RECICLADO2");
 		GroupLayout gl_panel_7 = new GroupLayout(panel_7);
-		gl_panel_7
-				.setHorizontalGroup(gl_panel_7.createParallelGroup(Alignment.LEADING)
+		gl_panel_7.setHorizontalGroup(
+			gl_panel_7.createParallelGroup(Alignment.LEADING)
+				.addGroup(gl_panel_7.createSequentialGroup()
+					.addGroup(gl_panel_7.createParallelGroup(Alignment.LEADING)
+						.addComponent(textArea, GroupLayout.DEFAULT_SIZE, 518, Short.MAX_VALUE)
 						.addGroup(gl_panel_7.createSequentialGroup()
-								.addGroup(gl_panel_7
-										.createParallelGroup(Alignment.LEADING)
-										.addComponent(textArea, GroupLayout.DEFAULT_SIZE, 872,
-												Short.MAX_VALUE)
-										.addGroup(gl_panel_7.createSequentialGroup().addGap(27)
-												.addGroup(gl_panel_7
-														.createParallelGroup(Alignment.LEADING).addComponent(
-																lblNewLabel_2)
-														.addComponent(lblReciclado))
-												.addGap(29)
-												.addGroup(gl_panel_7.createParallelGroup(Alignment.LEADING)
-														.addComponent(textField_25, GroupLayout.PREFERRED_SIZE,
-																GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-														.addComponent(textField_13, GroupLayout.PREFERRED_SIZE,
-																GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-														.addComponent(lblMetal))
-												.addGap(6)
-												.addGroup(gl_panel_7.createParallelGroup(Alignment.LEADING)
-														.addComponent(textField_26, GroupLayout.PREFERRED_SIZE,
-																GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-														.addGroup(gl_panel_7.createSequentialGroup().addGroup(gl_panel_7
-																.createParallelGroup(Alignment.LEADING)
-																.addComponent(textField_23, GroupLayout.PREFERRED_SIZE,
-																		GroupLayout.DEFAULT_SIZE,
-																		GroupLayout.PREFERRED_SIZE)
-																.addComponent(lblCristal).addComponent(lblGanancias))
-																.addPreferredGap(ComponentPlacement.RELATED)
-																.addGroup(gl_panel_7
-																		.createParallelGroup(Alignment.TRAILING)
-																		.addComponent(lblNewLabel, Alignment.LEADING)
-																		.addComponent(textField_24, Alignment.LEADING,
-																				GroupLayout.PREFERRED_SIZE,
-																				GroupLayout.DEFAULT_SIZE,
-																				GroupLayout.PREFERRED_SIZE))))))
-								.addContainerGap()));
-		gl_panel_7.setVerticalGroup(gl_panel_7.createParallelGroup(Alignment.LEADING).addGroup(gl_panel_7
-				.createSequentialGroup().addContainerGap().addComponent(lblGanancias)
-				.addPreferredGap(ComponentPlacement.RELATED)
-				.addGroup(gl_panel_7.createParallelGroup(Alignment.BASELINE).addComponent(lblCristal)
-						.addComponent(lblMetal).addComponent(lblNewLabel))
-				.addPreferredGap(ComponentPlacement.RELATED)
-				.addGroup(gl_panel_7.createParallelGroup(Alignment.BASELINE).addComponent(lblNewLabel_2)
-						.addComponent(textField_13, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE,
-								GroupLayout.PREFERRED_SIZE)
-						.addComponent(textField_23, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE,
-								GroupLayout.PREFERRED_SIZE)
-						.addComponent(textField_24, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE,
-								GroupLayout.PREFERRED_SIZE))
-				.addPreferredGap(ComponentPlacement.RELATED)
-				.addGroup(gl_panel_7.createParallelGroup(Alignment.BASELINE).addComponent(lblReciclado)
-						.addComponent(textField_25, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE,
-								GroupLayout.PREFERRED_SIZE)
-						.addComponent(textField_26, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE,
-								GroupLayout.PREFERRED_SIZE))
-				.addGap(62).addComponent(textArea, GroupLayout.DEFAULT_SIZE, 415, Short.MAX_VALUE).addContainerGap()));
+							.addGap(27)
+							.addGroup(gl_panel_7.createParallelGroup(Alignment.LEADING)
+								.addComponent(lblNewLabel_2)
+								.addComponent(lblReciclado)
+								.addComponent(lblReciclado_1))
+							.addGap(29)
+							.addGroup(gl_panel_7.createParallelGroup(Alignment.LEADING)
+								.addComponent(textField_25, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+								.addComponent(textField_13, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+								.addComponent(lblMetal)
+								.addComponent(textField_27, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+							.addGap(6)
+							.addGroup(gl_panel_7.createParallelGroup(Alignment.LEADING)
+								.addComponent(textField_28, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+								.addComponent(textField_26, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+								.addGroup(gl_panel_7.createSequentialGroup()
+									.addGroup(gl_panel_7.createParallelGroup(Alignment.LEADING)
+										.addComponent(textField_23, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+										.addComponent(lblCristal)
+										.addComponent(lblGanancias))
+									.addPreferredGap(ComponentPlacement.RELATED)
+									.addGroup(gl_panel_7.createParallelGroup(Alignment.TRAILING)
+										.addComponent(lblNewLabel, Alignment.LEADING)
+										.addComponent(textField_24, Alignment.LEADING, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))))))
+					.addContainerGap())
+		);
+		gl_panel_7.setVerticalGroup(
+			gl_panel_7.createParallelGroup(Alignment.LEADING)
+				.addGroup(gl_panel_7.createSequentialGroup()
+					.addContainerGap()
+					.addComponent(lblGanancias)
+					.addPreferredGap(ComponentPlacement.RELATED)
+					.addGroup(gl_panel_7.createParallelGroup(Alignment.BASELINE)
+						.addComponent(lblCristal)
+						.addComponent(lblMetal)
+						.addComponent(lblNewLabel))
+					.addPreferredGap(ComponentPlacement.RELATED)
+					.addGroup(gl_panel_7.createParallelGroup(Alignment.BASELINE)
+						.addComponent(lblNewLabel_2)
+						.addComponent(textField_13, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+						.addComponent(textField_23, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+						.addComponent(textField_24, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+					.addPreferredGap(ComponentPlacement.RELATED)
+					.addGroup(gl_panel_7.createParallelGroup(Alignment.BASELINE)
+						.addComponent(lblReciclado)
+						.addComponent(textField_25, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+						.addComponent(textField_26, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+					.addPreferredGap(ComponentPlacement.RELATED)
+					.addGroup(gl_panel_7.createParallelGroup(Alignment.LEADING)
+						.addGroup(gl_panel_7.createParallelGroup(Alignment.BASELINE)
+							.addComponent(textField_27, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+							.addComponent(textField_28, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+						.addComponent(lblReciclado_1))
+					.addGap(36)
+					.addComponent(textArea, GroupLayout.DEFAULT_SIZE, 386, Short.MAX_VALUE)
+					.addContainerGap())
+		);
 		panel_7.setLayout(gl_panel_7);
 
 		btnCalcular.addActionListener(new ActionListener() {
@@ -678,8 +695,8 @@ public class Window {
 				double fmetal=Double.parseDouble(textField_13.getText());
 				double fcristal=Double.parseDouble(textField_23.getText());
 				double fduty=Double.parseDouble(textField_24.getText());
-				double rmetal=Double.parseDouble(textField_25.getText());
-				double rcristal=Double.parseDouble(textField_26.getText());
+				double rmetal=Double.parseDouble(textField_25.getText())+Double.parseDouble(textField_27.getText());
+				double rcristal=Double.parseDouble(textField_26.getText())+Double.parseDouble(textField_28.getText());
 				
 				
 				StringBuilder sb = new StringBuilder();
@@ -785,10 +802,13 @@ public class Window {
 					duty2=0;
 				}
 				double d=fduty;
-				sb.append("M="+m+"\n\n");
-				sb.append("Al atacante 1 le corresponden"+(metal1+m/2)+" de metal, "+(cristal1+c/2)+" de cristal y "+(duty1+(d/2))+" de deuterio\n\n");
+				sb.append("M="+m+"\n");
+				sb.append("C="+c+"\n");
+				sb.append("D="+d+"\n\n");
 				
-				sb.append("Al atacante 2 le corresponden"+(metal2+m/2)+" de metal, "+(cristal2+c/2)+" de cristal y "+(duty2+(d/2))+" de deuterio\n\n");
+				sb.append("Al atacante 1 le corresponden "+(metal1+m/2)+" de metal, "+(cristal1+c/2)+" de cristal y "+(duty1+(d/2))+" de deuterio\n\n");
+				
+				sb.append("Al atacante 2 le corresponden "+(metal2+m/2)+" de metal, "+(cristal2+c/2)+" de cristal y "+(duty2+(d/2))+" de deuterio\n\n");
 				
 				
 				
